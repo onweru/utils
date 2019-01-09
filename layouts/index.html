@@ -1,10 +1,13 @@
 {{- define "main" }}
-<div class = 'wrap_min'>
-  {{- range .Site.Data.faq }}
-    <section class = "faq">
-      <h3 class = 'faq_question'>{{ .question }}</h3>
-      <p class = 'faq_answer'>{{ .answer }}</p>
-    </section>
-  {{- end }}
-</div>
+  <div class = 'wrap_min'>
+    {{- range .Site.Data.faq }}
+      <section class = 'faq'>
+        <h3 class = 'faq_question'>{{ .question }}</h3>
+        <p class = 'faq_answer'>{{ .answer }}</p>
+      </section>
+    {{- end }}
+  </div>
+  <div class = 'wrap_min'>
+    {{ .Content }}
+  </div>
 {{- end }}
