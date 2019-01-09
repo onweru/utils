@@ -56,6 +56,6 @@ enum Suit {
 let hearts = Suit.hearts
 let heartsDescription = hearts.simpleDescription()
 let heartsColor = hearts.color()
-print("Hearts Description is \(heartsDescription), and their corresponding color is \(heartsColor)")
+print("Hearts description is \(heartsDescription), and their corresponding color is \(heartsColor)")
 
 ```
