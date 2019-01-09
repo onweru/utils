@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="generator" content="Hugo 0.52" />
+		<title>Site</title>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'> 
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta property="og:title" content="" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/" />
+<meta property="og:updated_time" content="2019-01-09T22:59:52&#43;03:00"/>
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content=""/>
+
+<link rel = 'stylesheet' href = '/main.css' integrity = ''>
+	</head>
+	<body>
+		
+		<main >
+			<div>
+  <div class = 'wrap_min'>
+      <section class = 'faq'>
+        <h3 class = 'faq_question'>What&#39;s the Definition and Usage?</h3>
+        <p class = 'faq_answer'>The split() method is used to split a string into an array of substrings, and returns the new array. Tip: If an empty string (&#34;&#34;) is used as the separator, the string is split between each character. Note: The split() method does not change the original string.</p>
+      </section>
+      <section class = 'faq'>
+        <h3 class = 'faq_question'>What&#39;s the Definition and Usage?</h3>
+        <p class = 'faq_answer'>The split() method is used to split a string into an array of substrings, and returns the new array. Tip: If an empty string (&#34;&#34;) is used as the separator, the string is split between each character. Note: The split() method does not change the original string.</p>
+      </section>
+      <section class = 'faq'>
+        <h3 class = 'faq_question'>What&#39;s the Definition and Usage?</h3>
+        <p class = 'faq_answer'>The split() method is used to split a string into an array of substrings, and returns the new array. Tip: If an empty string (&#34;&#34;) is used as the separator, the string is split between each character. Note: The split() method does not change the original string.</p>
+      </section>
+      <section class = 'faq'>
+        <h3 class = 'faq_question'>What&#39;s the Definition and Usage?</h3>
+        <p class = 'faq_answer'>The split() method is used to split a string into an array of substrings, and returns the new array. Tip: If an empty string (&#34;&#34;) is used as the separator, the string is split between each character. Note: The split() method does not change the original string.</p>
+      </section>
+      <section class = 'faq'>
+        <h3 class = 'faq_question'>What&#39;s the Definition and Usage?</h3>
+        <p class = 'faq_answer'>The split() method is used to split a string into an array of substrings, and returns the new array. Tip: If an empty string (&#34;&#34;) is used as the separator, the string is split between each character. Note: The split() method does not change the original string.</p>
+      </section>
+      <section class = 'faq'>
+        <h3 class = 'faq_question'>What&#39;s the Definition and Usage?</h3>
+        <p class = 'faq_answer'>The split() method is used to split a string into an array of substrings, and returns the new array. Tip: If an empty string (&#34;&#34;) is used as the separator, the string is split between each character. Note: The split() method does not change the original string.</p>
+      </section>
+  </div>
+  <div class = 'wrap_min'>
+    <div class="highlight"><pre class="chroma"><code class="language-swift" data-lang="swift"><span class="kd">enum</span> <span class="nc">Rank</span><span class="p">:</span> <span class="nb">Int</span> <span class="p">{</span>
+  <span class="k">case</span> <span class="n">ace</span> <span class="p">=</span> <span class="mi">1</span>
+  <span class="k">case</span> <span class="n">one</span><span class="p">,</span> <span class="n">two</span><span class="p">,</span> <span class="n">three</span><span class="p">,</span> <span class="n">four</span><span class="p">,</span> <span class="n">five</span>
+  <span class="k">case</span> <span class="n">king</span><span class="p">,</span> <span class="n">queen</span><span class="p">,</span> <span class="n">bishop</span>
+
+  <span class="kd">func</span> <span class="nf">simpleDescription</span><span class="p">()</span> <span class="p">-&gt;</span> <span class="nb">String</span> <span class="p">{</span>
+    <span class="k">switch</span> <span class="kc">self</span> <span class="p">{</span>
+      <span class="k">case</span> <span class="p">.</span><span class="n">ace</span><span class="p">:</span> <span class="k">return</span> <span class="s">&#34;Ace&#34;</span>
+      <span class="k">case</span> <span class="p">.</span><span class="n">king</span><span class="p">:</span> <span class="k">return</span> <span class="s">&#34;King&#34;</span>
+      <span class="k">case</span> <span class="p">.</span><span class="n">queen</span><span class="p">:</span> <span class="k">return</span> <span class="s">&#34;Queen&#34;</span>
+      <span class="k">case</span> <span class="p">.</span><span class="n">bishop</span><span class="p">:</span> <span class="k">return</span> <span class="s">&#34;Bishop&#34;</span>
+      <span class="k">default</span><span class="p">:</span> <span class="k">return</span> <span class="nb">String</span><span class="p">(</span><span class="kc">self</span><span class="p">.</span><span class="n">rawValue</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+
+<span class="kd">let</span> <span class="nv">ace</span> <span class="p">=</span> <span class="n">Rank</span><span class="p">.</span><span class="n">five</span>
+<span class="kd">let</span> <span class="nv">result</span> <span class="p">=</span> <span class="n">ace</span><span class="p">.</span><span class="n">rawValue</span>
+
+<span class="bp">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="kd">let</span> <span class="nv">convertedRank</span> <span class="p">=</span> <span class="n">Rank</span><span class="p">(</span><span class="n">rawValue</span><span class="p">:</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nv">threeDescription</span> <span class="p">=</span> <span class="n">convertedRank</span><span class="p">.</span><span class="n">simpleDescription</span>
+<span class="p">}</span>
+
+<span class="c1">// SUIT</span>
+
+<span class="kd">enum</span> <span class="nc">Suit</span> <span class="p">{</span>
+  <span class="k">case</span> <span class="n">spades</span><span class="p">,</span> <span class="n">hearts</span><span class="p">,</span> <span class="n">diamonds</span><span class="p">,</span> <span class="n">clubs</span>
+  
+  <span class="kd">func</span> <span class="nf">simpleDescription</span><span class="p">()</span> <span class="p">-&gt;</span> <span class="nb">String</span> <span class="p">{</span>
+    <span class="k">switch</span> <span class="kc">self</span> <span class="p">{</span>
+      <span class="k">case</span> <span class="p">.</span><span class="n">spades</span><span class="p">:</span> <span class="k">return</span> <span class="s">&#34;spades&#34;</span>
+      <span class="k">case</span> <span class="p">.</span><span class="n">hearts</span><span class="p">:</span> <span class="k">return</span> <span class="s">&#34;hearts&#34;</span>
+      <span class="k">case</span> <span class="p">.</span><span class="n">diamonds</span><span class="p">:</span> <span class="k">return</span> <span class="s">&#34;diamonds&#34;</span>
+      <span class="k">case</span> <span class="p">.</span><span class="n">clubs</span><span class="p">:</span> <span class="k">return</span> <span class="s">&#34;clubs&#34;</span>
+    <span class="p">}</span>
+  <span class="p">}</span> 
+
+  <span class="kd">func</span> <span class="nf">color</span><span class="p">()</span> <span class="p">-&gt;</span> <span class="nb">String</span> <span class="p">{</span>
+    <span class="k">switch</span> <span class="kc">self</span> <span class="p">{</span>
+      <span class="k">case</span> <span class="p">.</span><span class="n">spades</span><span class="p">,</span> <span class="p">.</span><span class="n">clubs</span><span class="p">:</span> <span class="k">return</span> <span class="s">&#34;black&#34;</span>
+      <span class="k">case</span> <span class="p">.</span><span class="n">hearts</span><span class="p">,</span> <span class="p">.</span><span class="n">diamonds</span><span class="p">:</span> <span class="k">return</span> <span class="s">&#34;red&#34;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">let</span> <span class="nv">hearts</span> <span class="p">=</span> <span class="n">Suit</span><span class="p">.</span><span class="n">hearts</span>
+<span class="kd">let</span> <span class="nv">heartsDescription</span> <span class="p">=</span> <span class="n">hearts</span><span class="p">.</span><span class="n">simpleDescription</span><span class="p">()</span>
+<span class="kd">let</span> <span class="nv">heartsColor</span> <span class="p">=</span> <span class="n">hearts</span><span class="p">.</span><span class="n">color</span><span class="p">()</span>
+<span class="bp">print</span><span class="p">(</span><span class="s">&#34;Hearts description is </span><span class="si">\(</span><span class="n">heartsDescription</span><span class="si">)</span><span class="s">, and their corresponding color is </span><span class="si">\(</span><span class="n">heartsColor</span><span class="si">)</span><span class="s">&#34;</span><span class="p">)</span></code></pre></div>
+  </div>
+			</div><script src = "/index.js"></script>
+		</main>
+	</body>
+</html>
